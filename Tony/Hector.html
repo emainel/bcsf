@@ -1,0 +1,541 @@
+
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <script type="text/javascript" src="//cdn.evgnet.com/beacon/fortinet/fortinet_main/scripts/evergage.min.js"></script>
+
+        
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>What is Quality of Service (QoS) in Networking? | Fortinet </title>
+    <meta name="description" content="Learn the meaning of quality of service (QoS) networking and what tools and techniques help manage traffic with Fortinet. ✓ Contact us to get started."/>
+    <meta name="keywords" content="Network Security"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@fortinet"/>
+    <meta name="twitter:title" content="What is Quality of Service (QoS) in Networking? | Fortinet "/>
+    <meta name="twitter:description" content="Learn the meaning of quality of service (QoS) networking and what tools and techniques help manage traffic with Fortinet. ✓ Contact us to get started."/>
+    <meta name="twitter:image" content="https://www.fortinet.com/content/dam/fortinet/images/icons/fortinet-social-icon.jpg"/>
+    <meta property="og:title" content="What is Quality of Service (QoS) in Networking? | Fortinet "/>
+    <meta property="og:image" content="https://www.fortinet.com/content/dam/fortinet/images/icons/fortinet-social-icon.jpg"/>
+    <meta property="og:description" content="Learn the meaning of quality of service (QoS) networking and what tools and techniques help manage traffic with Fortinet. ✓ Contact us to get started."/>
+    <meta property="og:site_name" content="Fortinet"/>
+<link rel="shortcut icon" href="/etc/designs/fortinet/favicon.ico"/>
+    
+    
+    <meta property="og:locale" content="en_us"/>
+    <link rel="canonical" href="https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service"/>
+    <link rel="alternate" href="https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service" hreflang="en-us"/>
+        <link rel="alternate" href="https://www.fortinet.com/de/resources/cyberglossary/qos-quality-of-service" hreflang="de-de"/>
+        <link rel="alternate" href="https://www.fortinet.com/fr/resources/cyberglossary/qos-quality-of-service" hreflang="fr-fr"/>
+        <link rel="alternate" href="https://www.fortinet.com/it/resources/cyberglossary/qos-quality-of-service" hreflang="it-it"/>
+        <link rel="alternate" href="https://www.fortinet.com/ru/resources/cyberglossary/qos-quality-of-service" hreflang="ru-ru"/>
+        <link rel="alternate" href="https://www.fortinet.com/br/resources/cyberglossary/qos-quality-of-service" hreflang="pt-br"/>
+        <link rel="alternate" href="https://www.fortinet.com/lat/resources/cyberglossary/qos-quality-of-service" hreflang="es"/>
+        <link rel="alternate" href="https://www.fortinet.com/cn/resources/cyberglossary/qos-quality-of-service" hreflang="zh-hans-cn"/>
+        <link rel="alternate" href="https://www.fortinet.com/tw/resources/cyberglossary/qos-quality-of-service" hreflang="zh-tw"/>
+        <link rel="alternate" href="https://www.fortinet.com/kr/resources/cyberglossary/qos-quality-of-service" hreflang="ko-kr"/>
+        
+    
+<meta property="og:url" content="/resources/cyberglossary/qos-quality-of-service"/>
+        
+<link rel="preload" href="/etc/designs/fortinet/webfonts/30EAC9_3_0.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="/etc/designs/fortinet/webfonts/30EAC9_17_0.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="stylesheet" href="/etc/designs/fortinet/clientlib-all.min.4622.css" type="text/css"/>
+
+
+
+
+
+
+
+
+    <script>
+        window.configData= {"pageDetails":{"pageTitle":"QoS-Quality-of-Service"}};
+    </script>
+
+
+
+<!-- OneTrust Cookies Consent Notice start for fortinet.com -->
+
+
+
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="f85f39fc-d7aa-467a-b762-fbb722748016"></script>
+    <script type="text/javascript">
+
+function OptanonWrapper() {
+    {
+
+        window.dataLayer.push({
+            event: 'OneTrustGroupsUpdated'
+        });
+        Optanon.InsertScript('//assets.adobedtm.com/launch-EN23cb8375449840dc93b13f34d935b8b9.min.js','head',null, null, '1',true);
+
+        if(OptanonActiveGroups.indexOf(',C0004,') === -1){
+            $('.social-button').remove();
+            $('.content-social-share').remove();
+        }
+    }
+}
+
+</script>
+
+
+<!-- OneTrust Cookies Consent Notice end for fortinet.com -->
+
+
+
+
+        
+            
+            <!-- Bright Edge integration header : start -->
+            
+            
+<!-- be_ixf, sdk, gho-->
+<meta name="be:sdk" content="java_sdk_1.6.2" />
+<meta name="be:timer" content="31ms" />
+<meta name="be:norm_url" content="https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service" />
+<meta name="be:capsule_url" content="https://ixfd-api.bc0a.com/api/ixf/1.0.0/get_capsule/f00000000216283/01970723202" />
+<meta name="be:api_dt" content="pny_2022; pnm_04; pnd_09; pnh_03; pnmh_28; pn_epoch:1649500122803" />
+<meta name="be:mod_dt" content="pny_1969; pnm_12; pnd_31; pnh_16; pnmh_00; pn_epoch:0" />
+<meta name="be:orig_url" content="https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service" />
+<meta name="be:messages" content="351162" /><style>
+.be-ix-link-block{clear:both}
+.be-ix-link-block .be-related-link-container{margin-bottom:20px}
+.be-ix-link-block .be-related-link-container .be-label,.be-ix-link-block .be-related-link-container .be-list{font-size:.7619rem;font-family:"HelveticaNeueW01-75Bold",Helvetica,Arial,sans-serif}
+.be-ix-link-block .be-related-link-container .be-label{margin:0;color:#5a646c}
+.be-ix-link-block .be-related-link-container .be-list{list-style:none;margin:0;padding:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{margin:0;padding:0;font-family:"HelveticaNeueW01-45Roma",Helvetica,Arial,sans-serif;font-size:.7619rem}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a{color:#5a646c;font-family:"HelveticaNeueW01-45Roma",Helvetica,Arial,sans-serif}
+@media (max-width: 767px) {
+.be-ix-link-block .be-related-link-container{padding:0 10px}
+.be-ix-link-block .be-related-link-container .be-label{width:100%}
+.be-ix-link-block .be-related-link-container .be-list{display:block;width:100%}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{display:block}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-bottom:0}
+}
+@media (min-width: 768px) {
+.be-ix-link-block .be-related-link-container{display:flex}
+.be-ix-link-block .be-related-link-container .be-label{display:inline-block;margin-right:20px;flex-basis:130px;flex-grow:0;flex-shrink:0}
+.be-ix-link-block .be-related-link-container .be-list{display:inline-block;width:auto}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{display:inline-block;margin-right:20px}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-right:0}
+}
+</style>
+
+
+<script data-cfasync="false" id="marvel" data-customerid="f00000000216283" src="https://marvel-b2-cdn.bc0a.com/marvel.js"></script>
+
+            
+            <!-- Bright Edge integration header : end -->
+        
+    </head>
+    <body class="page  ">
+    <div class="skip-nav">
+       
+
+
+
+
+
+        <main class="page--body" id="CONTENT">
+            
+
+
+
+
+    
+    
+    <div class="C09-Hero-Banner"><section class="valprop    val-prop--sass-solutions " style="background-image:url(/content/dam/fortinet/images/hero-banners/web-banner-generic-1700x550.jpg);">
+    <div class="wrap">
+        
+
+        
+        
+
+        
+        
+        
+            <div class="row">
+
+                <div class="col-7 col-md-9 col-sm-12">
+                    <h1>What is Quality of Service (QoS) in Networking?</h1>
+                    
+                    
+                    
+                    
+                        
+                            
+    
+    
+
+    
+    
+    
+
+                        
+                    
+                    
+
+                </div>
+                
+            </div>
+        
+    </div>
+</section>
+</div>
+
+
+    
+    
+    <div class="C05-Container">
+
+
+<section class="section--resource cs--no-padding  ">
+	
+	
+	<div class="wrap wrap--default  ">
+		
+
+
+
+
+    
+    
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        What is QoS in Networking?
+    
+
+</h2>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p><b>Quality of service (QoS)</b> is the use of mechanisms or technologies that work on a network to control traffic and ensure the performance of critical applications with limited network capacity. It enables organizations to adjust their overall <a href="/resources/cyberglossary/network-traffic">network traffic</a> by prioritizing specific high-performance applications.</p>
+<p>QoS is typically applied to networks that carry traffic for resource-intensive systems. Common services for which it is required include internet protocol television (IPTV), online gaming, streaming media, videoconferencing, video on demand (VOD), and Voice over IP (VoIP). </p>
+<p>Using QoS in networking, organizations have the ability to optimize the performance of multiple applications on their network and gain visibility into the bit rate, delay, jitter, and packet rate of their network. This ensures they can engineer the traffic on their network and change the way that packets are routed to the internet or other networks to avoid transmission delay. This also ensures that the organization achieves the expected service quality for applications and delivers expected user experiences.</p>
+<p>As per the QoS meaning, the key goal is to enable networks and organizations to prioritize traffic, which includes offering dedicated bandwidth, controlled jitter, and lower <a href="/resources/cyberglossary/latency">latency</a>. The technologies used to ensure this are vital to enhancing the performance of business applications, wide-area networks (WANs), and service provider networks.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        How Does QoS Work?
+    
+
+</h2>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>QoS networking technology works by marking packets to identify service types, then configuring routers to create separate virtual queues for each application, based on their priority. As a result, bandwidth is reserved for critical applications or websites that have been assigned priority access. </p>
+<p><a href="https://docs.fortinet.com/document/fortigate/6.2.0/cookbook/249147/sd-wan-traffic-shaping-and-qos" target="_blank">QoS</a> technologies provide capacity and handling allocation to specific flows in network traffic. This enables the network administrator to assign the order in which packets are handled and provide the appropriate amount of bandwidth to each application or traffic flow.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Types of Network Traffic
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>Understanding how QoS network software works is reliant on defining the various types of traffic that it measures. These are:</p>
+<ol>
+<li>Bandwidth: The speed of a link. QoS can tell a router how to use bandwidth. For example, assigning a certain amount of bandwidth to different queues for different traffic types.</li>
+<li>Delay: The time it takes for a packet to go from its source to its end destination. This can often be affected by queuing delay, which occurs during times of congestion and a packet waits in a queue before being transmitted. QoS enables organizations to avoid this by creating a priority queue for certain types of traffic.</li>
+<li>Loss:<b> </b>The amount of data lost as a result of packet loss, which typically occurs due to network congestion. QoS enables organizations to decide which packets to drop in this event.</li>
+<li>Jitter: The irregular speed of packets on a network as a result of congestion, which can result in packets arriving late and out of sequence. This can cause distortion or gaps in audio and video being delivered.</li>
+</ol>
+
+
+</div>
+
+
+    
+    
+    <div class="C28-Image image parbase">
+
+    <img src="/content/fortinet-com/en_us/resources/cyberglossary/qos-quality-of-service/_jcr_content/par/c05_container/par/c28_image_copy_copy_.img.jpg/1642013920079.jpg" alt="What is quality of service (QOS) traffic measurement?" title="Quality of service QOS traffic" data-emptytext="Image"/>
+
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Getting Started with QoS
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>Implementing QoS begins with an enterprise identifying the types of traffic that are important to them, use high volumes of bandwidth, and/or are sensitive to latency or packet loss.</p>
+<p>This helps the organization understand the needs and importance of each traffic type on its network and design an overall approach. For example, some organizations may only need to configure bandwidth limits for specific services, whereas others may need to fully configure interface and security policy bandwidth limits for all their services, as well as prioritize queuing critical services relative to traffic rate.</p>
+<p>The organization can then deploy policies that classify traffic and ensure the availability and consistency of its most important applications. Traffic can be classified by port or internet protocol (IP), or through a more sophisticated approach such as by application or user.</p>
+<p>Bandwidth management and queuing tools are then assigned roles to handle traffic flow specifically based on the classification they received when they entered the network. This allows for packets within traffic flows to be stored until the network is ready to process them. Priority queuing can also be used to ensure the necessary availability and minimal latency of network performance for important applications and traffic. This is so that the network’s most important activities are not starved of bandwidth by those of lesser priority.</p>
+<p>Furthermore, bandwidth management measures and controls traffic flow on the network infrastructure to ensure it does not exceed capacity and prevent congestion. This includes using traffic shaping, a rate-limiting technique that optimizes or guarantees performance and increases usable bandwidth, and scheduling algorithms, which offer several methods for providing bandwidth to specific traffic flows.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Why is QoS Important?
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>Traditional business networks operated as separate entities. Phone calls and teleconferences were handled by one network, while laptops, desktops, servers and other devices connected to another. They rarely crossed paths, unless a computer used a telephone line to access the internet.</p>
+<p>When networks only carried data, speed was not overly critical. But now, interactive applications carrying audio and video content need to be delivered at high speed, without packet loss or variations in delivery speed.</p>
+<p>QoS is particularly important to guarantee the high performance of critical applications that require high bandwidth for real-time traffic. For example, it helps businesses to prioritize the performance of “inelastic” applications that often have minimum bandwidth requirements, maximum latency limits, and high sensitivity to jitter and latency, such as VoIP and videoconferencing.</p>
+<p>QoS helps businesses prevent the delay of these sensitive applications, ensuring they perform to the level that users require. For example, lost packets could cause a delay to the stream, which results in the sound and video quality of a videoconference call to become choppy and indecipherable.</p>
+<p>QoS is increasingly important as network performance requirements adapt to the growing number of people using them. The latest online applications and services require vast amounts of bandwidth and network performance, and users demand they offer high performance at all times. Organizations, therefore, need to deploy techniques and technologies that guarantee the best possible service.</p>
+<p>QoS is also becoming increasingly important as the Internet of Things (IoT) continues to come to maturity. For example, in the manufacturing sector, machines now leverage networks to provide real-time status updates on any potential issues. Therefore, any delay in feedback could cause highly costly mistakes in IoT networking. QoS enables the data stream to take priority in the network and ensures that the information flows as quickly as possible.</p>
+<p>Cities are now filled with smart sensors that are vital to running large-scale IoT projects such as smart buildings. The data collected and analyzed, such as humidity and temperature data, is often highly time-sensitive and needs to be identified, marked, and queued appropriately.</p>
+
+
+</div>
+
+
+
+	</div>
+</section>
+</div>
+
+
+    
+    
+    <div class="C05-Container">
+
+
+<section class="section--resource cs--no-padding bg--light-gray ">
+	
+	
+	<div class="wrap wrap--default  ">
+		
+
+
+
+
+    
+    
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        What Techniques and Best Practices Are Involved in QoS?
+    
+
+</h2>
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3>
+
+    
+    
+        Techniques
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>There are several techniques that businesses can use to guarantee the high performance of their most critical applications. These include:</p>
+<ul>
+<li><b>Prioritization of delay-sensitive VoIP traffic via routers and switches:</b> Many enterprise networks can become overly congested, which sees routers and switches start dropping packets as they come in and out faster than they can be processed. As a result, streaming applications suffer. Prioritization enables traffic to be classified and receive different priorities depending on its type and destination. This is particularly useful in a situation of high congestion, as packets with higher priority can be sent ahead of other traffic.</li>
+<li><b>Resource reservation:</b> The Resource Reservation Protocol (RSVP) is a transport layer protocol that reserves resources across a network and can be used to deliver specific levels of QoS for application data streams. Resource reservation enables businesses to divide network resources by traffic of different types and origins, define limits, and guarantee bandwidth.</li>
+<li><b>Queuing: </b>Queuing is the process of creating policies that provide preferential treatment to certain data streams over others. Queues are high-performance memory buffers in routers and switches, in which packets passing through are held in dedicated memory areas. When a packet is assigned higher priority, it is moved to a dedicated queue that pushes data at a faster rate, which reduces the chances of it being dropped. For example, businesses can assign a policy to give voice traffic priority over the majority of network bandwidth. The routing or switching device will then move this traffic’s packets and frames to the front of the queue and immediately transmit them.</li>
+<li><b>Traffic marking:</b> When applications that require priority over other bandwidth on a network have been identified, the traffic needs to be marked. This is possible through processes like Class of Service (CoS), which marks a data stream in the Layer 2 frame header, and Differentiated Services Code Point (DSCP), which marks a data stream in the Layer 3 packet header.</li>
+</ul>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3>
+
+    
+    
+        Best Practices
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>In addition to these techniques, there are also several best practices that organizations should keep in mind when <a href="https://docs.fortinet.com/document/fortigate/6.2.0/cookbook/67342/determining-your-qos-requirements">determining their QoS requirements</a>.</p>
+<ol>
+<li>Ensure that maximum bandwidth limits at the source interface and security policy are not set too low to prevent excessive packet discard.</li>
+<li>Consider the ratio at which packets are distributed between available queues and which queues are used by which services. This can affect latency levels, queue distribution, and packet assignment.</li>
+<li>Only place bandwidth guarantees on specific services. This will avoid the possibility of all traffic using the same queue in high-volume situations.</li>
+<li>Configure prioritization for all traffic through either type of service-based priority or security policy priority, not both. This will simplify analysis and troubleshooting.</li>
+<li>Try to minimize the complexity of QoS configuration to ensure high performance.</li>
+<li>To get accurate testing results, use the User Datagram Protocol (UDP), and do not oversubscribe bandwidth throughput.</li>
+</ol>
+
+
+</div>
+
+
+
+	</div>
+</section>
+</div>
+
+
+    
+    
+    <div class="C05-Container">
+
+
+<section class="section--resource cs--no-padding  ">
+	
+	
+	<div class="wrap wrap--default  ">
+		
+
+
+
+
+    
+    
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        Advantages of QoS
+    
+
+</h2>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>The deployment of QoS is crucial for businesses that want to ensure the availability of their business-critical applications. It is vital for delivering differentiated bandwidth and ensuring data transmission takes place without interrupting traffic flow or causing packet losses. Major advantages of deploying QoS include:</p>
+<ol>
+<li><b>Unlimited application prioritization:</b> QoS guarantees that businesses’ most mission-critical applications will always have priority and the necessary resources to achieve high performance.</li>
+<li><b>Better resource management: </b>QoS enables administrators to better manage the organization’s internet resources. This also reduces costs and the need for investments in link expansions.</li>
+<li><b>Enhanced user experience: </b>The end goal of QoS is to guarantee the high performance of critical applications, which boils down to delivering optimal user experience. Employees enjoy high performance on their high-bandwidth applications, which enables them to be more effective and get their job done more quickly.</li>
+<li><b>Point-to-point traffic management: </b>Managing a network is vital however traffic is delivered, be it end to end, node to node, or point to point. The latter enables organizations to deliver customer packets in order from one point to the next over the internet without suffering any packet loss.</li>
+<li><b>Packet loss prevention: </b>Packet loss can occur when packets of data are dropped in transit between networks. This can often be caused by a failure or inefficiency, network congestion, a faulty router, loose connection, or poor signal. QoS avoids the potential of packet loss by prioritizing bandwidth of high-performance applications.</li>
+<li><b>Latency reduction:</b> Latency is the time it takes for a network request to go from the sender to the receiver and for the receiver to process it. This is typically affected by routers taking longer to analyze information and storage delays caused by intermediate switches and bridges. QoS enables organizations to reduce latency, or speed up the process of a network request, by prioritizing their critical application.</li>
+</ol>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        Guarantee Performance with QoS
+    
+
+</h2>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>QoS is crucial for all organizations that want to guarantee the best performance of their most critical applications and services. It is vital to ensuring that high-bandwidth solutions like VoIP, videoconferencing, and increasingly, streaming services do not suffer latency or lag. </p>
+<p>QoS enables an organization to prioritize traffic and resources to guarantee the promised performance of a specific application or service. It also enables enterprises to prioritize different applications, data flows, and users in order to guarantee the optimum level of performance across their networks.</p>
+<p>Fortinet enables QoS through FortiGate SD-WAN. Learn more about <a href="/products/sd-wan" target="_blank">SD-WAN</a> and how it can extend your high performance network across branch offices:</p>
+<p><a href="/products/sd-wan" target="_blank">Achieve QoS with FortiGate SD-WAN</a></p>
+
+
+</div>
+
+
+
+	</div>
+</section>
+</div>
+<center><a href=index.html><input type="button" name="login" style="background-color: slategrey;color:floralwhite;width:150px;height: 30px;"value="PREVIOUS PAGE"><br><br>
+</p>
+</center>
+
+    
+    

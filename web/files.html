@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GROUP 7 ASSING...</title>
+</head>
+<body>
+	<center><h1>WELCOME</h1></center><br><br><br>
+
+	<center><h1>LINUX LOGGING</h1></center>
+	<script type="text/javascript">
+		function error(){
+
+			alert("Right click disabled.");
+		}
+	</script>
+	<body bgcolor="#CCCCFF">
+		
+	    <body oncontextmenu="return error()">
+	    <body oncontextmenu="return false">
+<div class="x-main left" role="main">
+<div class='code-block code-block-65' style='margin: 8px 0; clear: both;'>
+<span class="no-lazy-area"></span></div>
+<article id="post-12173" class="post-12173 post type-post status-publish format-standard has-post-thumbnail hentry category-developers tag-linux tag-logging">
+<div class="entry-featured">
+<div class="entry-thumb"><img width="881" height="461" src="https://stackify.com/wp-content/uploads/2017/06/What-are-Linux-Logs-01-881x461.png" alt="" class="attachment-entry size-entry wp-post-image no-lazyload" /></div> </div>
+<div class="entry-wrap">
+<header class="entry-header">
+<h1 class="entry-title">What are Linux Logs? How to View Them, Most Important Directories &#038; More</h1>
+
+<div class="entry-content content">
+<div class='code-block code-block-30' style='margin: 8px 0; clear: both;'>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDSRGWC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+</div>
+<p><em>In software, it’s essential to monitor logs of system activities. Today we’ll unravel what Linux logs are and how you can view them.</em></p>
+<p>Logging is a must for today’s developers and why <a href="https://stackify.com/retrace/">Retrace</a> was designed with a built-in, centralized log management tool. Retrace collects all your log data for streamlined monitoring and insights and includes all the features you need in a log management tool &#8211; log tailing, full-text searching, <a href="https://stackify.com/what-is-structured-logging-and-why-developers-need-it/">structured logging</a>, monitoring, alerting and <a href="https://stackify.com/error-monitoring/">error tracking</a> functionalities for a seamless experience. And like all Stackify by Netreo solutions, Retrace works out-of-the-box with your stack, including Linux, Azure, MySQL, Windows, AWS, Oracle, MongoDB and more.</p>
+<p>Retrace is built to do the heavy lifting for you, but it’s still important to understand Linux logs, how to view them and which logs are most important to your work. This mini-guide provides all the need-to-know essentials for you in an easily digestible format, so it won’t take up your entire lunch break to read – promise!</p>
+<div class='code-block code-block-33' style='margin: 8px 0; clear: both;'>
+<hr /><span class='hs-cta-wrapper' id='hs-cta-wrapper-bba1a069-9daf-4a77-aba1-e9c96f7c4a5e'><span class='hs-cta-node hs-cta-bba1a069-9daf-4a77-aba1-e9c96f7c4a5e' id='hs-cta-bba1a069-9daf-4a77-aba1-e9c96f7c4a5e'><!--[if lte IE 8]><div id='hs-cta-ie-element'></div><![endif]--><a href='https://cta-redirect.hubspot.com/cta/redirect/207384/bba1a069-9daf-4a77-aba1-e9c96f7c4a5e'><img id='hs-cta-img-bba1a069-9daf-4a77-aba1-e9c96f7c4a5e' style='border-width:0px;' alt='Tell the Whole Story with Integrated Logs + Errors' data-src='https://no-cache.hubspot.com/cta/default/207384/bba1a069-9daf-4a77-aba1-e9c96f7c4a5e.png' class='hs-cta-img lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img class='hs-cta-img' id='hs-cta-img-bba1a069-9daf-4a77-aba1-e9c96f7c4a5e' style='border-width:0px;' src='https://no-cache.hubspot.com/cta/default/207384/bba1a069-9daf-4a77-aba1-e9c96f7c4a5e.png'  alt='Tell the Whole Story with Integrated Logs + Errors'/></noscript></a></span><script charset='utf-8' src='https://js.hscta.net/cta/current.js'></script><script> hbspt.cta.load(207384, 'bba1a069-9daf-4a77-aba1-e9c96f7c4a5e', {}); </script></span><hr /></div>
+<h2 id="h-a-definition-of-linux-logs">A Definition of Linux Logs</h2>
+<p>Linux logs provide a timeline of events for the Linux operating system, applications and system and are a valuable troubleshooting tool when you encounter issues. When issues arise, analyzing log files is the first thing an administrator needs to do.</p>
+<p>For desktop app-specific issues, log files are written to different locations. Where a desktop application writes logs depends on the developer and whether or not the app allows for custom log configuration. Chrome, for example, writes crash reports to ‘~/.chrome/Crash Reports’.</p>
+<p>Linux log files are stored in plain-text and can be found in the <strong>/var/log</strong> directory and subdirectory. There are Linux logs for everything: system, kernel, package managers, boot processes, Xorg, Apache, MySQL, etc. In this article, we will focus specifically on Linux system logs.</p>
+<p>First things first, you can change to this directory using the <strong>cd</strong> command. You also need to be the root user to view or access log files on Linux or Unix-like operating systems.</p>
+<h3 id="h-how-to-view-linux-logs">How to View Linux Logs</h3>
+<p>Like any other OS, you can use certain <a href="https://www.linux.com/learn/sysadmin/viewing-linux-logs-command-line">commands to see Linux log files</a>.</p>
+<p>Linux logs will display with the command <strong>cd/var/log</strong>. Then, you can type<strong> ls </strong>to see the logs stored under this directory. One of the most important logs to view is the <em>syslog</em>, which logs everything but auth-related messages.</p>
+<p>Issue the command <strong>var/log/syslog </strong>to view everything under the syslog. Zooming in on a specific issue will take a while, since these files tend to be long. You can use <em>Shift+G</em> to get to the end of the file, denoted by “END.”</p>
+<p>You can also view logs via <strong>dmesg, </strong>which prints the kernel ring buffer and sends you to the end of the file. From there, you can use the command <strong>dmesg | less </strong>to scroll through the output. If you want to view log entries for the user facility, you need to issue the command <strong>dmesg –facility=user.</strong></p>
+<p>Lastly, you can use the <strong>tail </strong>command to view log files. It’s a handy tool that only shows the last part of the logs, where problems usually lie. For this, use the command <strong>tail /var/log/syslog </strong>or<strong> tail</strong> <strong>-f /var/log/syslog. </strong><em>tail</em> will continue watching the log file and print out the next line written to the file. This allows you to follow what is written to <a href="https://stackify.com/syslog-101/">syslog</a> as it happens. Check out <a href="https://stackify.com/13-ways-to-tail-a-log-file-on-windows-unix/">20 ways to tail a log file</a> post.</p>
+<p>For a specific number of lines (example, the last 5 lines), key in <strong>tail</strong> <strong>-f -n 5 /var/log/syslog</strong>, which prints the most recent 5 lines. Once a new line comes, the old one gets removed. To escape the tail command, press Ctrl+X.</p>
+<h3 id="h-most-important-linux-logs">Most Important Linux Logs</h3>
+<p>We can group most directories into one of four categories:</p>
+<ul><li>Application Logs</li><li>Event Logs</li><li>Service Logs</li><li>System Logs</li></ul>
+<p>Monitoring every log is a monumental task and one reason we included centralized <a href="https://stackify.com/log-management/">log management</a> when we created <a href="https://stackify.com/retrace/">Retrace</a>. Log monitoring and management is essential for all developers, but the logs that you monitor will depend on your goals or other variables. There is some consensus about the most critical, <a href="https://www.eurovps.com/blog/important-linux-log-files-you-must-be-monitoring">must-monitor logs</a>.</p>
+<h3 id="h-critical-must-monitor-logs">Critical, Must Monitor Logs</h3>
+<ul><li><strong>/var/log/syslog </strong>or <strong>/var/log/messages</strong>: general messages, as well as system-related information. Essentially, this log stores all activity data across the global system. Note that activity for Redhat-based systems, such as CentOS or Rhel, are stored in messages, while Ubuntu and other Debian-based systems are stored in Syslog.</li><li><strong>/var/log/auth.log </strong>or <strong>/var/log/secure</strong>: store authentication logs, including both successful and failed logins and authentication methods. Again, the system type dictates where authentication logs are stored; Debian/Ubuntu information is stored in /var/log/auth.log, while Redhat/CentrOS is stored in /var/log/secure.</li><li><strong>/var/log/boot.log</strong>: a repository of all information related to booting and any messages logged during startup.</li><li><strong>/var/log/maillog or var/log/mail.log:</strong> stores all logs related to mail servers, useful when you need information about&nbsp;postfix, smtpd, or any email-related services running on your server.</li><li><strong>/var/log/kern</strong>: stores Kernel logs and warning data. This log is valuable for troubleshooting custom kernels as well.</li><li><strong>/var/log/dmesg</strong>: messages relating to device drivers. The command <strong>dmesg</strong> can be used to view messages in this file.</li><li><strong>/var/log/faillog:</strong> contains information all failed login attempts, which is useful for gaining insights on attempted security breaches, such as those attempting to hack login credentials as well as brute-force attacks.</li><li><strong>/var/log/cron</strong>: stores all Crond-related messages (cron jobs), such as when the cron daemon initiated a job, related failure messages, etc.</li><li><strong>/var/log/yum.log:</strong> if you install packages using the<strong> yum</strong> command, this log stores all related information, which can be useful in determining whether a package and all components were correctly installed.</li><li><strong>/var/log/httpd/</strong>: a directory containing error_log and access_log files of the Apache httpd daemon. The <strong>error_log</strong> contains all errors encountered by httpd. These errors include memory issues and other system-related errors. <strong>access_log</strong> contains a record of all requests received over HTTP.</li><li><strong>/var/log/mysqld.log </strong>or<strong> /var/log/mysql.log&nbsp;</strong>: MySQL log file that logs all debug, failure and success messages. Contains information about the starting, stopping and restarting of MySQL daemon mysqld. This is another instance where the system dictates the directory;&nbsp;RedHat, CentOS, Fedora, and other RedHat-based systems use&nbsp;/var/log/mysqld.log, while Debian/Ubuntu use the&nbsp;/var/log/mysql.log directory.</li></ul>
+<h3 id="h-sample-output">Sample Output</h3>
+<p>What does the output look like? Here&#8217;s an example of a <a href="https://ossec-docs.readthedocs.io/en/latest/log_samples/linux/cron.html" target="_blank" rel="noopener noreferrer">Crontab edited by root</a> log:</p>
+<pre class="wp-block-preformatted prettyprint">Sep 11 09:46:33 sys1 crontab[20601]: (root) BEGIN EDIT (root)
+Sep 11 09:46:39 sys1 crontab[20601]: (root) REPLACE (root)
+Sep 11 09:46:39 sys1 crontab[20601]: (root) END EDIT (root)
+</pre>
+<p>And here&#8217;s a case of <a href="https://ossec-docs.readthedocs.io/en/latest/log_samples/linux/syslogd.html" target="_blank" rel="noopener noreferrer">Syslogd on Ubuntu</a> (exiting and restarting):</p>
+<pre class="wp-block-preformatted prettyprint">Dec 19 07:35:21 localhost exiting on signal 15
+Dec 19 16:49:31 localhost syslogd 1.4.1#17ubuntu3: restart.
+</pre>
+<p>And <a href="https://ossec-docs.readthedocs.io/en/latest/log_samples/linux/kernel.html" target="_blank" rel="noopener noreferrer">system shutdown</a> from the Linux kernel:</p>
+<pre class="wp-block-preformatted prettyprint">Jun  1 22:20:05 secserv kernel: Kernel logging (proc) stopped.
+Jun  1 22:20:05 secserv kernel: Kernel log daemon terminating.
+Jun  1 22:20:06 secserv exiting on signal 15
+Nov 27 08:05:57 galileo kernel: Kernel logging (proc) stopped.
+Nov 27 08:05:57 galileo kernel: Kernel log daemon terminating.
+Nov 27 08:05:57 galileo exiting on signal 15
+</pre>
+<p>A few other directories and their uses include:</p>
+<ul><li><strong>/var/log/daemon.log:</strong> tracks services running in the background that perform important tasks, but has no graphical output</li><li><strong>/var/log/btmp</strong>: recordings of failed login attempts</li><li><strong>/var/log/utmp</strong>: current login state, by user</li><li><strong>/var/log/wtmp</strong>: login/logout history</li><li><strong>/var/log/lastlog</strong>: information about the last logins for all users. This binary file can be read by command <strong>lastlog</strong>.</li><li><strong>/var/log/pureftp.log</strong>: runs the pureftp process that listens for FTP connections. All connections, FTP logins, and authentication failures get logged here</li><li><strong>/var/log/spooler</strong>: rarely used and often empty. When used, it contains messages from USENET</li><li><strong>/var/log/xferlog</strong>: contains all FTP file transfer sessions, including information about the file name and user initiating FTP transfers</li></ul>
+<p>Understanding the usefulness and limitations of Linux logging is important for any professional working with them. To tie together all your system logging, use <a href="https://stackify.com/retrace/">Retrace</a>, which helps track system performance and centralizes all your logs. You can also try Netreo’s free code profiler, <a href="https://stackify.com/prefix/">Prefix</a>, to write better code faster, every time!</p>
+
+
+		
+	
+<p>
+	
+</p>
+<center><a href=LOG.html><input type="button" name="login" style="background-color: slategrey;color:floralwhite;width:150px;height: 30px;"value="BACK PAGE"><br><br>
+</p>
+</center>
+
+</body>
+</html>
